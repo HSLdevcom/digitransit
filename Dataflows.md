@@ -3,6 +3,7 @@ Goal of the data flow is to load raw data from multiple sources, convert that to
 
 ## Supported data formats
 There isn’t one data format that would suit all needs for Journey planning. Basically, we want to convert various data formats into 4 different groups:
+
 1. Transportation schedules and associated geographic information.
 2. Geocoding data
 3. Realtime data
@@ -48,7 +49,7 @@ https://github.com/HSLdevcom/digitransit-geocoder/blob/master/geocoder/app.py
 
 ### Realtime data flow
 
-![Realtime data flow](images/realtime.png)
+![Realtime data flow](images/realtime_dataflow.png)
 
 Heavy lifting of realtime data is done in other systems. Digitransit user interface integrates to MQTT datasources in order to read realtime data from vehicles. In Helsinki city area realtime service, vehicle data is sent once every 30 seconds. Our realtime server works as a cache for MQTT datasource thus enabling user interface to query "old" realtime information and show that data immediately to user.
 
@@ -61,3 +62,5 @@ See Realtime-server code:
 https://github.com/HSLdevcom/navigator-server
 
 ### Map tile data flow
+
+![Map tile data flow](images/map_dataflow.png)
