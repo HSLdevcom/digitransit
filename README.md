@@ -17,4 +17,7 @@ The source code of the platform is dual-licensed under the EUPL v1.2 and AGPLv3 
 * [Installation](Installation.md)
 * [Work with us](Work-with-us.md)
 
+## Digitransit project related documentation
+[Project documentation can be found in wiki](https://github.com/HSLdevcom/digitransit/wiki)
+
 
