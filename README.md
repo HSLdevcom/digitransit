@@ -7,8 +7,15 @@ Digitransit Platform is a open source journey planning solution that combines se
 ## Licensing
 The source code of the platform is dual-licensed under the EUPL v1.2 and AGPLv3 licenses.
 
-## Demo
-* [matka.hsl.fi](http://matka.hsl.fi/)
+## Key features
+* Multimodal routing
+* Realtime information support
+* Mobile friendly user interface that supports themes
+* Configurable for any region
+
+## Demos
+* [Finland - Helsinki city area demo](http://matka.hsl.fi/)
+* [Finland - National demo](http://digitransit.fi/digitransit-ui/)
 
 ## Digitransit platform
 * [High level architecture](Architecture.md)
