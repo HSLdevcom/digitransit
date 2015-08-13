@@ -12,7 +12,7 @@ We start with raw data. Then, depending on component, we apply conversions in or
 
 ### Route data flow
 
-[[images/route_dataflow.png]]
+![Route data flow](images/route_dataflow.png)
 
 Route data is built of the whole Finland area. First, we download raw data in various formats from Helsinki, Tampere, Oulu, etc. and this data is stored on disk. Also, we load Finnish national data from Finnish Transport Agency that contains national routes for e.g. trains. Some data is cleaned, some isn't. 
 
