@@ -11,10 +11,10 @@ The source code of the platform is dual-licensed under the EUPL v1.2 and AGPLv3 
 * [matka.hsl.fi](http://matka.hsl.fi/)
 
 ## Digitransit platform
-* [High level architecture](architecture)
-* [Components](components)
-* [Dataflows](dataflows)
-* [Installation](installation)
-* [Work with us](work with us)
+* [High level architecture](Architecture.md)
+* [Components](Components.md)
+* [Dataflows](Dataflows.md)
+* [Installation](Installation.md)
+* [Work with us](Work-with-us.md)
 
 
