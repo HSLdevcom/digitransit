@@ -3,10 +3,10 @@ Goal of the data flow is to load raw data from multiple sources, convert that to
 
 ## Supported data formats
 There isn’t one data format that would suit all needs for Journey planning. Basically, we want to convert various data formats into 4 different groups:
-1) Transportation schedules and associated geographic information.
-2) Geocoding data
-3) Realtime data
-4) Map tile data
+1. Transportation schedules and associated geographic information.
+2. Geocoding data
+3. Realtime data
+4. Map tile data
 
 We start with raw data. Then, depending on component, we apply conversions in order to refine data into proper data format. After refinement, data gets loaded into component. Finally components provides loaded data through it’s API.
 
@@ -30,6 +30,34 @@ https://github.com/HSLdevcom/digitransit-deploy/blob/master/roles/route-server-d
 
 ### Geocoding data flow
 
+![Geocoding data flow](images/geocoder_dataflow.png)
+
+Geocoder fetches data from multiple sources, converts them into JSON and loads data into ElasticSearch database. Our Geocoder API is a simple REST wrapper on ElasticSearch data. 
+
+Geocoder API docs:
+http://digitransit.fi/geocoder/
+
+Geocoding data flow can be studied more closely here:
+https://github.com/HSLdevcom/digitransit-geocoder/blob/master/scripts/import-data.sh
+
+Different conversions can be studied more closely here:
+https://github.com/HSLdevcom/digitransit-geocoder/tree/master/geocoder
+
+Geocoder API implementation:
+https://github.com/HSLdevcom/digitransit-geocoder/blob/master/geocoder/app.py
+
 ### Realtime data flow
+
+![Realtime data flow](images/realtime.png)
+
+Heavy lifting of realtime data is done in other systems. Digitransit user interface integrates to MQTT datasources in order to read realtime data from vehicles. In Helsinki city area realtime service, vehicle data is sent once every 30 seconds. Our realtime server works as a cache for MQTT datasource thus enabling user interface to query "old" realtime information and show that data immediately to user.
+
+You might notice that currently the name of realtime server is "Navigator-server". Realtime functionality will be changing in near future and implementation details are not yet clear. Navigator-server is a proof of concept that was developed by HSL earlier.
+
+Read more about MQTT:
+http://mqtt.org/
+
+See Realtime-server code:
+https://github.com/HSLdevcom/navigator-server
 
 ### Map tile data flow
