@@ -18,9 +18,10 @@ The source code of the platform is dual-licensed under the EUPL v1.2 and AGPLv3 
 * [Finland - National demo](http://digitransit.fi/digitransit-ui/)
 
 ## Digitransit platform
-* [High level architecture](Architecture.md)
+* [Architecture](Architecture.md)
 * [Components](Components.md)
 * [Dataflows](Dataflows.md)
+* [Runtime environment](Runtime-environment.md)
 * [Installation](Installation.md)
 * [Work with us](Work-with-us.md)
 
