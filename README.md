@@ -7,6 +7,9 @@ Digitransit Platform is a open source journey planning solution that combines se
 ## Licensing
 The source code of the platform is dual-licensed under the EUPL v1.2 and AGPLv3 licenses.
 
+## Issues
+Our issue tracking and roadmap is handled in [https://digitransit.atlassian.net](https://digitransit.atlassian.net).
+
 ## Key features
 * Multimodal routing
 * Realtime information support
