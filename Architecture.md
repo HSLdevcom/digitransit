@@ -18,5 +18,5 @@ Routing, Geocoding, Map tiles, and realtime data are provided through APIs. Ther
 
 ## Deployment
 
-Deployment project contains DevOps stuff that weaves components together and enables Ops to manage the service. 
+Digitransit-deploy project contains tools for DevOps teams. These tools can be used to build docker images, start containers, and link containers together.
 
